@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/m1_social_network-react_homework_template/static/css/main.7acaea2f.css",
+    "main.js": "/m1_social_network-react_homework_template/static/js/main.cafdaebe.js",
+    "index.html": "/m1_social_network-react_homework_template/index.html",
+    "main.7acaea2f.css.map": "/m1_social_network-react_homework_template/static/css/main.7acaea2f.css.map",
+    "main.cafdaebe.js.map": "/m1_social_network-react_homework_template/static/js/main.cafdaebe.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7acaea2f.css",
+    "static/js/main.cafdaebe.js"
+  ]
+}
