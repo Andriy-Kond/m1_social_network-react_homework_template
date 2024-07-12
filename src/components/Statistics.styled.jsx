@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const Section = styled.section`
+const Section = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -8,16 +8,16 @@ export const Section = styled.section`
   border: solid black 2px;
 `;
 
-export const Title = styled.h2`
+const Title = styled.h2`
   padding: 20px;
   color: #555555;
 `;
 
-export const List = styled.ul`
+const List = styled.ul`
   display: flex;
 `;
 
-export const Item = styled.li`
+const Item = styled.li`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -29,7 +29,9 @@ export const Item = styled.li`
   mix-blend-mode: difference;
 `;
 
-export const Label = styled.span`
+const Label = styled.span`
   display: flex;
   padding: 5px;
 `;
+
+export { Section, Title, List, Item, Label };

@@ -3,9 +3,9 @@ import { getInvertRandomHexColor } from 'js/getInvertRandomHexColor';
 import {
   Section,
   Title,
+  List,
   Item,
   Label,
-  List,
 } from 'components/Statistics.styled';
 
 export function Statistics({ title, stats }) {

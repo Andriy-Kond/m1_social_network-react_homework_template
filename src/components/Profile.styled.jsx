@@ -1,6 +1,6 @@
 import styled from '@emotion/styled';
 
-export const ProfileContainer = styled.div`
+const ProfileContainer = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +18,7 @@ export const ProfileContainer = styled.div`
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
 `;
 
-export const Description = styled.div`
+const Description = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,7 +28,7 @@ export const Description = styled.div`
   padding: 40px;
 `;
 
-export const UserAvatar = styled.img`
+const UserAvatar = styled.img`
   width: 150px;
   height: 150px;
   border-radius: 50%;
@@ -36,15 +36,15 @@ export const UserAvatar = styled.img`
   background-size: contain;
 `;
 
-export const UserName = styled.p`
+const UserName = styled.p`
   font-size: 56px;
   color: #252525;
 `;
 
-export const UserTag = styled.p``;
-export const UserLocation = styled.p``;
+const UserTag = styled.p``;
+const UserLocation = styled.p``;
 
-export const Stats = styled.ul`
+const Stats = styled.ul`
   display: flex;
   align-items: center;
   height: 120px;
@@ -52,7 +52,7 @@ export const Stats = styled.ul`
   font-size: 24px;
   background-color: #8badd175;
 `;
-export const StatsItem = styled.li`
+const StatsItem = styled.li`
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -63,9 +63,22 @@ export const StatsItem = styled.li`
     border-right: 1px solid #fff;
   }
 `;
-export const StatsLabel = styled.span``;
+const StatsLabel = styled.span``;
 
-export const StatsQuantity = styled.span`
+const StatsQuantity = styled.span`
   font-size: 36px;
   color: #252525;
 `;
+
+export {
+  ProfileContainer,
+  Description,
+  UserAvatar,
+  UserName,
+  UserTag,
+  UserLocation,
+  Stats,
+  StatsItem,
+  StatsLabel,
+  StatsQuantity,
+};

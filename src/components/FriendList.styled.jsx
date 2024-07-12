@@ -6,6 +6,7 @@ const FriendsBoard = styled.ul`
   gap: 20px;
   padding: 40px;
 `;
+
 const Friend = styled.li`
   display: flex;
   align-items: center;
@@ -16,6 +17,7 @@ const Friend = styled.li`
   border-radius: 10px;
   box-shadow: 1px 1px 5px 0px rgba(0, 0, 0, 0.5);
 `;
+
 const FriendStatus = styled.span`
   display: flex;
 
@@ -24,6 +26,7 @@ const FriendStatus = styled.span`
   border-radius: 50%;
   background-color: ${props => props.color};
 `;
+
 const FriendAvatar = styled.img`
   width: 100px;
   padding: 10px;
@@ -31,6 +34,7 @@ const FriendAvatar = styled.img`
   border-radius: 10px;
   background-color: #5fc2e963;
 `;
+
 const FriendName = styled.p``;
 
 export { FriendsBoard, Friend, FriendStatus, FriendAvatar, FriendName };

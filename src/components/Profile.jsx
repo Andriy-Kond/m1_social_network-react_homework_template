@@ -10,6 +10,7 @@ import {
   UserTag,
   UserLocation,
 } from 'components/Profile.styled';
+
 export function Profile({ username, tag, location, avatar, stats }) {
   return (
     <ProfileContainer>
