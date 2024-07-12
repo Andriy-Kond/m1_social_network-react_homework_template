@@ -10,6 +10,7 @@ export const Section = styled.section`
 
 export const Title = styled.h2`
   padding: 20px;
+  color: #555555;
 `;
 
 export const List = styled.ul`

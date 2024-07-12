@@ -1,3 +1,5 @@
+import { getRandomHexColor } from 'js/getRandomHexColor';
+import { getInvertRandomHexColor } from 'js/getInvertRandomHexColor';
 import {
   Section,
   Title,
@@ -5,22 +7,20 @@ import {
   Label,
   List,
 } from 'components/Statistics.styled';
-import { getRandomHexColor } from 'js/getRandomHexColor';
-import { getInvertRandomHexColor } from 'js/getInvertRandomHexColor';
 
 export function Statistics({ title, stats }) {
   return (
-    <Section class="statistics">
-      {title && <Title class="title">Upload stats</Title>}
+    <Section>
+      {title && <Title>Upload stats</Title>}
 
       <List>
-        {stats.map(stat => {
+        {stats.map(({ id, label, percentage }) => {
           const color = getRandomHexColor();
           const invertColor = getInvertRandomHexColor(color);
           return (
-            <Item key={stat.id} color={color} invertColor={invertColor}>
-              <Label>{stat.label}:</Label>
-              <Label>{stat.percentage}%</Label>
+            <Item key={id} color={color} invertColor={invertColor}>
+              <Label>{label}:</Label>
+              <Label>{percentage}%</Label>
             </Item>
           );
         })}

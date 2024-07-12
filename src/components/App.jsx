@@ -1,14 +1,16 @@
 import { Profile } from 'components/Profile';
 import { Statistics } from 'components/Statistics';
+import { FriendList } from 'components/FriendList';
 
 import user from 'db/user.json';
 import data from 'db/data.json';
+import friends from 'db/friends.json';
 
 export const App = () => {
   return (
     <div
       style={{
-        height: '100vh',
+        // height: '100vh',
         display: 'flex',
         justifyContent: 'center',
         flexDirection: 'column',
@@ -25,10 +27,9 @@ export const App = () => {
         avatar={user.avatar}
         stats={user.stats}
       />
-
       <Statistics title="Upload stats" stats={data} />
-
       <Statistics stats={data} />
+      <FriendList friends={friends} />
     </div>
   );
 };
